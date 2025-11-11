@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Creative portfolio of a Content Writer, Video Editor & Social Media Manager — transforming ideas into stories and stories into content that connects.">
+  <meta name="keywords" content="content writer, video editor, social media manager, freelance creator, YouTube script writer, video editing, motion graphics, portfolio, SEO writing, creative content">
+  <meta name="author" content="Your Name">
+  <title>Portfolio | Content Writer & Video Editor</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8fafc;
+    }
+    .gradient-text {
+      background: linear-gradient(90deg, #6366f1, #8b5cf6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .btn-primary {
+      background: linear-gradient(90deg, #6366f1, #8b5cf6);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 9999px;
+      transition: 0.3s;
+    }
+    .btn-primary:hover {
+      opacity: 0.9;
+    }
+    .card-shadow {
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+<main class="flex-grow">
+<!-- NAVBAR -->
+<nav class="bg-white shadow-sm sticky top-0 z-50 border-b border-slate-200">
+  <div class="max-w-screen-xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-4">
+
+    <!-- Logo -->
+    <div class="text-xl font-semibold text-slate-800">Akbar</div>
+
+    <!-- Nav Links (Always Visible) -->
+    <div class="flex flex-wrap gap-4 text-sm text-slate-700">
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    
+    <!-- Resume Button (Desktop Only) -->
+    <a href="https://drive.google.com/your-resume-link" target="_blank"
+       class="px-4 py-2 rounded-lg text-sm hidden md:inline-block border border-indigo-500 text-indigo-600 hover:bg-indigo-50">
+      Download Resume
+    </a>
+
+  </div>
+</nav>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="md:hidden focus:outline-none" id="menu-toggle">
+      <svg class="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+</nav>
+
+  <!-- Mobile Menu -->
+  <div class="md:hidden hidden flex-col gap-4 px-4 pb-4 text-sm text-slate-700" id="mobile-menu">
+    <a href="https://drive.google.com/your-resume-link" target="_blank"
+       class="mt-2 border border-indigo-500 text-indigo-600 px-4 py-2 rounded-lg text-center hover:bg-indigo-50">
+      Download Resume
+    </a>
+  </div>
+</nav>
+
+<!-- Smooth Scroll -->
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+<!-- Toggle Script -->
+<script>
+  document.getElementById('menu-toggle').addEventListener('click', function () {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+</script>
+</script>
+  <!-- HERO SECTION -->
+<section class="text-center py-20 bg-gradient-to-b from-white to-slate-50">
+  <div class="max-w-3xl mx-auto px-6">
+
+    <!-- Headline -->
+    <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+      I Turn Ideas into Stories — <br class="hidden md:block" />
+      and Stories into <span class="gradient-text">Content that Connects</span>
+    </h1>
+
+    <!-- Subtitle -->
+    <p class="text-slate-600 text-lg mb-8">
+      Content Writer &bull; Video Editor &bull; Social Media Manager
+    </p>
+
+    <!-- CTA Buttons -->
+    <div class="flex flex-col md:flex-row justify-center gap-4">
+      <a href="#portfolio" class="btn-primary flex items-center justify-center gap-2">
+        📁 View My Work
+      </a>
+      <a href="#" class="btn-primary">Download Resume</a>
+      <a href="#contact"
+         class="border border-indigo-500 text-indigo-600 px-6 py-3 rounded-full hover:bg-indigo-50">
+        Contact Me
+      </a>
+    </div>
+
+  </div>
+</section>
+
+  <!-- ABOUT SECTION -->
+<section id="about" class="scroll-mt-20 py-16 px-6 bg-white">
+  <section class="py-16 px-6 bg-white">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+      <!-- Text Content -->
+      <div>
+        <h2 class="text-3xl font-bold gradient-text mb-4">About Me</h2>
+        <p class="text-slate-600 leading-relaxed mb-4">
+          I create content that bridges ideas and impact. From writing SEO-friendly articles and engaging social media copy 
+          to editing dynamic videos and motion graphics — I bring creative ideas to life across multiple formats.
+        </p>
+        <p class="text-slate-600 leading-relaxed">
+          I’ve worked on YouTube and Instagram projects that focus on simplifying complex topics, growing audience engagement, 
+          and building a consistent visual identity through thumbnails, banners, and brand storytelling.
+        </p>
+      </div>
+
+      <!-- Protected Image -->
+      <div class="relative w-fit mx-auto">
+        <!-- Invisible Overlay Link -->
+        <a href="#about"
+           class="absolute inset-0 z-10 cursor-default"
+           draggable="false"
+           ondragstart="return false;"
+           oncontextmenu="return showTooltip(event)">
+        </a>
+        
+        <!-- Tooltip (Above Image) -->
+        <div id="tooltip" 
+             class="hidden absolute -top-10 left-1/2 transform -translate-x-1/2 
+                    bg-black text-white text-xs px-3 py-1 rounded-full shadow-lg 
+                    opacity-0 transition-opacity duration-500">
+          🔒Image protected
+        </div>
+        <!-- Actual Image -->
+        <img 
+          src="C:\Users\smate\Desktop\Portfolio Akbar\Assest\Copy  5.png"
+          alt="Creative workspace"
+          draggable="false"
+          ondragstart="return false;"
+          oncontextmenu="return showTooltip(event)"
+          class="rounded-xl shadow-lg object-cover w-64 h-64 transform transition duration-300 hover:scale-105 select-none pointer-events-none"
+        />
+
+       <!-- Tooltip (Floating Animation) -->
+        <div id="tooltip" 
+             class="hidden absolute -top-10 left-1/2 transform -translate-x-1/2 
+                    bg-black text-white text-xs px-3 py-1 rounded-full shadow-lg 
+                    opacity-0 transition-all duration-500 ease-out
+                    translate-y-2">
+          🔒 Image protected
+        </div>
+      </div>
+
+    </div>
+  </section>
+</section>
+
+<!-- JS: Tooltip Handler -->
+<script>
+function showTooltip(event) {
+  event.preventDefault();
+  const tooltip = document.getElementById('tooltip');
+  tooltip.classList.remove('hidden');
+
+  // Fade + float up
+  setTimeout(() => {
+    tooltip.classList.add('opacity-100');
+    tooltip.classList.remove('translate-y-2');
+  }, 10);
+
+  // Fade + float down to hide
+  setTimeout(() => {
+    tooltip.classList.remove('opacity-100');
+    tooltip.classList.add('translate-y-2');
+    setTimeout(() => tooltip.classList.add('hidden'), 500);
+  }, 1500);
+
+  return false;
+
+}
+ // Trigger for mobile (tap or long-press)
+  protectedImage.addEventListener('touchstart', showTooltipMobile);
+  protectedImage.addEventListener('click', showTooltipMobile);
+</script>
+
+
+
+  <!-- SERVICES SECTION -->
+  <section class="py-16 px-6 bg-gradient-to-b from-indigo-50 to-white">
+    <div class="max-w-5xl mx-auto text-center mb-12">
+      <h2 class="text-3xl font-bold gradient-text mb-3">What I Do</h2>
+      <p class="text-slate-600 text-lg">Delivering creative and impactful content that fits every platform.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      <div class="bg-white p-8 rounded-2xl card-shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold text-indigo-600 mb-2">✍️ Content Writing</h3>
+        <p class="text-slate-600">SEO-optimized blogs, articles, and YouTube scripts that engage and educate audiences while ranking higher on search engines.</p>
+      </div>
+      <div class="bg-white p-8 rounded-2xl card-shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold text-indigo-600 mb-2">🎬 Video Editing</h3>
+        <p class="text-slate-600">From faceless videos to raw footage editing — I bring stories to life using motion graphics, text animations, and creative transitions.</p>
+      </div>
+      <div class="bg-white p-8 rounded-2xl card-shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold text-indigo-600 mb-2">📱 Social Media Management</h3>
+        <p class="text-slate-600">Content planning, post design, and analytics-driven strategies for building brand consistency and online growth.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION -->
+  <!-- 🌟 PORTFOLIO SECTION -->
+<section id="portfolio" class="py-16 px-6 bg-white">
+  <div class="max-w-5xl mx-auto text-center mb-12">
+    <h2 class="text-3xl font-bold gradient-text mb-3">Portfolio Highlights</h2>
+    <p class="text-slate-600 text-lg">
+      Selected works and personal projects across writing, editing, and digital content creation.
+    </p>
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+
+    <!-- ✅ Portfolio Item 1 (YouTube) -->
+    <div class="group relative cursor-pointer" onclick="openModal('https://www.youtube.com/embed/yOUR_VIDEO_ID1')">
+      <img src="C:\Users\smate\Desktop\Portfolio Akbar\Assest\youtube-svg.svg"
+           class="rounded-xl shadow-lg object-cover w-full h-64 transform transition duration-300 hover:scale-105"
+           alt="YouTube project">
+      <p class="mt-3 text-indigo-600 font-medium text-center">
+        <a href="https://www.youtube.com/@LetsLearnSimple" target="_blank" class="hover:underline" onclick="event.stopPropagation();">
+          YouTube Channel
+        </a>
+      </p>
+    </div>
+
+    <!-- ✅ Portfolio Item 2 (Social Media Project with Popup) -->
+    <div class="group relative cursor-pointer" onclick="openPopup(event)">
+      <img src="C:\Users\smate\Desktop\Portfolio Akbar\Assest\social media management 1.svg"
+           class="rounded-xl shadow-lg w-full h-64 object-cover transition transform group-hover:scale-105 group-hover:shadow-2xl"
+           alt="Social Media project">
+      <p class="mt-3 text-indigo-600 font-medium group-hover:underline text-center">
+        Social Media Project
+      </p>
+    </div>
+
+    <!-- ✅ Portfolio Item 3 (Behance Project) -->
+    <div class="group relative cursor-pointer" onclick="openBehanceModal()">
+      <img src="C:\Users\smate\Desktop\Portfolio Akbar\Assest\Editing and design.png"
+           class="rounded-xl shadow-lg object-cover w-full h-64 transition transform group-hover:scale-105 group-hover:shadow-2xl"
+           alt="Brand Identity & Visual Assets">
+      <p class="mt-3 text-indigo-600 font-medium text-center group-hover:underline">
+        <a href="https://www.behance.net/akbarengineer/" target="_blank" onclick="event.stopPropagation();">
+          Brand Identity & Visual Assets
+        </a>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- 🎬 Video Modal -->
+<div id="videoModal" class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 py-20">
+  <div class="bg-white rounded-2xl overflow-hidden w-full max-w-xl mx-4 relative shadow-2xl">
+    <button onclick="closeModal()" 
+        class="absolute top-4 right-4 text-white text-3xl font-bold bg-black bg-opacity-50 rounded-full w-7 h-7 flex items-center justify-center hover:bg-black hover:bg-opacity-80 transition z-50">
+      &times;
+    </button>
+
+    <div onclick="openModal('https://www.youtube.com/embed/rj747NoLAqk')" class="cursor-pointer hover:scale-105 transition-transform aspect-video rounded-xl overflow-hidden">
+      <img src="https://img.youtube.com/vi/rj747NoLAqk/hqdefault.jpg" alt="Video 1" class="w-full h-full object-cover">
+      <p class="mt-3 font-semibold text-center">Christmas Myth BUSTED — Santa Location Revealed!</p>
+    </div>
+
+    <div class="aspect-w-16 aspect-h-9">
+      <iframe id="videoFrame" src="" frameborder="0" allowfullscreen class="w-full h-[400px] rounded-t-2xl"></iframe>
+    </div>
+
+    <div class="p-4 text-center">
+      <a href="https://www.youtube.com/@LetsLearnSimple" target="_blank"
+         class="inline-block px-6 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition">
+        Visit Channel →
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- 🌟 Social Links Popup -->
+<div id="popup"
+     class="hidden opacity-0 fixed inset-0 flex items-center justify-center 
+            bg-black bg-opacity-70 backdrop-blur-sm transition-opacity duration-300 z-50">
+
+  <div id="popupContent"
+       class="bg-white rounded-2xl p-8 shadow-2xl text-center space-y-4 w-80 
+              transform translate-y-8 opacity-0 transition-all duration-300 relative"
+       onclick="event.stopPropagation()">
+
+    <button onclick="togglePopup()" 
+            class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold leading-none">
+      &times;
+    </button>
+
+    <h3 class="text-lg font-bold text-gray-800 mb-2">Choose a Platform</h3>
+
+    <a href="https://www.youtube.com/@LetsLearnSimple" target="_blank"
+       class="flex items-center justify-center gap-2 text-red-600 font-medium hover:underline">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" class="w-5 h-5" alt=""> YouTube
+    </a>
+
+    <a href="https://www.instagram.com/elimaiyaaikarpom/" target="_blank"
+       class="flex items-center justify-center gap-2 text-pink-500 font-medium hover:underline">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" class="w-5 h-5" alt=""> Instagram
+    </a>
+
+    <a href="https://www.facebook.com/hidayathudhdeen/" target="_blank"
+       class="flex items-center justify-center gap-2 text-blue-700 font-medium hover:underline">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" class="w-5 h-5" alt=""> Facebook
+    </a>
+
+    <button onclick="togglePopup()" 
+            class="mt-4 px-4 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition">
+      Close
+    </button>
+  </div>
+</div>
+
+<!-- 💼 Behance Modal -->
+<div id="behanceModal" class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 py-20">
+  <div class="bg-white rounded-2xl overflow-hidden w-full max-w-4xl mx-4 relative shadow-2xl">
+
+    <!-- Close Button -->
+    <button onclick="closeBehanceModal()" 
+      class="absolute top-4 right-4 text-white text-3xl font-bold bg-black bg-opacity-50 rounded-full w-7 h-7 flex items-center justify-center hover:bg-black hover:bg-opacity-80 transition z-50">
+      &times;
+    </button>
+
+    <!-- Embedded Behance Project -->
+  <!-- Embedded Behance Project (Compact Fit) -->
+<div style="max-width: 100%; overflow: hidden; border-radius: 8px;">
+  <iframe id="behanceFrame"
+    src="https://www.behance.net/embed/project/238117219?ilo0=1"
+    width="100%" height="400"
+    style="border: none; display: block;"
+    allowfullscreen loading="lazy"
+    allow="clipboard-write"
+    referrerpolicy="strict-origin-when-cross-origin">
+  </iframe>
+</div>
+
+   <!-- Behance Link -->
+    <div class="p-4 text-center">
+    <a href="https://www.behance.net/akbarengineer/" target="_blank"
+     class="inline-block px-6 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition">
+    View Full Project →
+    </a>
+   </div>
+  </div>
+</div>
+
+
+<!-- ✅ JS Control -->
+<script>
+function openModal(videoUrl) {
+  const modal = document.getElementById("videoModal");
+  const frame = document.getElementById("videoFrame");
+  frame.src = videoUrl;
+  modal.classList.remove("hidden");
+}
+
+function closeModal() {
+  const modal = document.getElementById("videoModal");
+  const frame = document.getElementById("videoFrame");
+  frame.src = "";
+  modal.classList.add("hidden");
+}
+
+function openPopup(event) {
+  event.stopPropagation();
+  const popup = document.getElementById("popup");
+  const content = document.getElementById("popupContent");
+  popup.classList.remove("hidden");
+  setTimeout(() => {
+    popup.classList.remove("opacity-0");
+    content.classList.remove("opacity-0", "translate-y-8");
+  }, 10);
+}
+
+function togglePopup() {
+  const popup = document.getElementById("popup");
+  const content = document.getElementById("popupContent");
+  popup.classList.add("opacity-0");
+  content.classList.add("opacity-0", "translate-y-8");
+  setTimeout(() => popup.classList.add("hidden"), 300);
+}
+
+function openBehanceModal() {
+  document.getElementById("behanceModal").classList.remove("hidden");
+}
+
+function closeBehanceModal() {
+  document.getElementById("behanceModal").classList.add("hidden");
+}
+
+window.addEventListener("click", (e) => {
+  const popup = document.getElementById("popup");
+  const content = document.getElementById("popupContent");
+  if (!popup.classList.contains("hidden") && !content.contains(e.target)) {
+    togglePopup();
+  }
+});
+</script>
+
+
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
+
+    <!-- Left Column: Contact Info -->
+    <div class="fade-in">
+      <h2 class="text-3xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+        📩 Let’s Work Together
+      </h2>
+      <p class="text-slate-600 mb-10">
+        Open to internships, freelance work, and collaborative projects.  
+        Send a quick brief — I reply fast.
+      </p>
+
+      <div class="space-y-6">
+        <!-- Email -->
+        <div class="flex items-center gap-4">
+           <div class="p-3 rounded-xl bg-slate-100 flex items-center justify-center">
+             <img src="C:\Users\smate\Desktop\Portfolio Akbar\Assest\gmail-svgrepo-com.svg" alt="Gmail icon" class="w-6 h-6 inline-block align-middle" />
+           </div>
+           <div>
+             <p class="text-sm text-slate-500">Email</p>
+             <a href="mailto:akbarengineer21@gmail.com" class="text-indigo-600 hover:underline">akbarengineer21@gmail.com</a>
+           </div>
+        </div>
+
+
+        <!-- LinkedIn -->
+        <div class="flex items-center gap-4">
+          <div class="p-3 rounded-xl bg-gradient-to-br from-violet-100 to-indigo-100">
+            <img src="C:\Users\smate\Desktop\Portfolio Akbar\Assest\linkedin-svgrepo-com (1).svg" alt="LinkedIn" class="w-6 h-6 inline-block align-middle" />
+          </div>
+          <div>
+            <p class="text-sm text-slate-500">LinkedIn</p>
+            <a href="https://www.linkedin.com/in/mohamed-akbar-ali-s-675975276" class="text-indigo-600 hover:underline">
+              linkedin.com/in/akbar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <!-- Right Column: Contact Form -->
+<div class="bg-slate-50 rounded-2xl shadow-lg p-8 fade-in fade-delay">
+  <form action="https://formsubmit.co/akbarengineer21@gmail.com" method="POST" class="space-y-6">
+
+    <div>
+      <label for="name" class="block text-sm font-medium text-slate-700">Name</label>
+      <input id="name" name="name" type="text" required
+             class="w-full mt-2 p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-indigo-400 outline-none">
+    </div>
+
+    <div>
+      <label for="email" class="block text-sm font-medium text-slate-700">Email</label>
+      <input id="email" name="email" type="email" required
+             class="w-full mt-2 p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-indigo-400 outline-none">
+    </div>
+
+    <!-- Service Dropdown with Custom Arrow -->
+   <div class="dropdown-wrapper">
+  <label for="service">Service</label>
+  <div class="dropdown-box">
+    <select id="service" name="service"
+        class="w-full p-3 pr-12 border border-slate-300 rounded-xl bg-white text-slate-700 focus:ring-2 focus:ring-indigo-400 outline-none appearance-none">
+  <option disabled selected>Choose a service</option>
+      <option>Script Writing</option>
+      <option>Video Editing</option>
+      <option>Graphic Design</option>
+      <option>Social Media Management</option>
+      <option>Multiple Services</option>
+      <option>Other / Custom Request</option>
+
+    </select>
+  </div>
+</div>
+
+
+    <div>
+      <label for="message" class="block text-sm font-medium text-slate-700">Message</label>
+      <textarea id="message" name="message" rows="4"
+                class="w-full mt-2 p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-indigo-400 outline-none"
+                placeholder="Tell me about your project..."></textarea>
+    </div>
+
+    <!-- Send Message Button -->
+    <button type="submit" class="pseudo-gradient-button relative w-full py-3 font-medium rounded-xl overflow-hidden shadow-md mt-4 text-black transition-colors duration-300">
+      <span class="relative z-10 transition-colors duration-500">Send Message</span>
+    </button>
+
+  </form>
+</div>
+
+  </div>
+</section>
+
+<!-- Add this CSS at the end of your <style> section -->
+<style>
+  .pseudo-gradient-button {
+    position: relative;
+    overflow: hidden;
+    background-color: #f1f5f9; /* matches bg-slate-100 */
+    cursor: pointer;
+    border-radius: 1rem; /* rounded-xl */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .pseudo-gradient-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  }
+
+  .pseudo-gradient-button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, #8b5cf6, #6366f1); /* violet → indigo */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+    border-radius: 1rem;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .pseudo-gradient-button:hover::before {
+    transform: scaleX(1);
+  }
+
+  .pseudo-gradient-button span {
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s ease;
+  }
+
+  .pseudo-gradient-button:hover span {
+    color: white;
+  }
+</style>
+</main>
+
+
+<!-- Footer -->
+  <footer class="bg-gradient-to-r from-indigo-50 to-purple-50 border-t border-indigo-200 py-8 text-center text-sm text-slate-600">
+    <div class="max-w-screen-xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="text-slate-700 font-medium">
+        © 2025 <span class="font-semibold text-indigo-600">Akbar S</span> — All rights reserved. Crafted with creativity and purpose.
+      </div>
+      <div class="flex gap-4 text-slate-600">
+        <a href="https://www.linkedin.com/in/mohamed-akbar-ali-s-675975276" target="_blank" class="hover:text-indigo-600 transition-colors">LinkedIn</a>
+        <a href="https://www.behance.net/akbarengineer/" target="_blank" class="hover:text-indigo-600 transition-colors">Behance</a>
+        <a href="mailto:akbarengineer21@gmail.com" class="hover:text-indigo-600 transition-colors">Email</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+<!-- Fade Animation + Responsive Styling -->
+<style>
+  .fade-in { animation: fadeIn 1.2s ease-in-out; }
+  .fade-delay { animation-delay: 0.4s; }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Mobile Responsive Tweaks */
+@media (max-width: 768px) {
+    #contact {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+    #contact .grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    #contact h2 {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+    #contact p {
+      text-align: center;
+    }
+    #contact form {
+      padding: 1.5rem;
+    }
+    #contact .flex.items-center {
+      justify-content: center;
+    }
+    #contact a {
+      font-size: 0.95rem;
+    }
+  }
+  /* Custom dropdown arrow for Service field */
+.dropdown-wrapper {
+  margin-top: 1.5rem;
+  font-family: sans-serif;
+}
+
+.dropdown-wrapper label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  color: #334155; /* slate-700 */
+}
+
+.dropdown-box {
+  position: relative;
+  border: 1px solid #cbd5e1; /* slate-300 */
+  border-radius: 0.75rem; /* rounded-xl */
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.dropdown-box select {
+  width: 100%;
+  padding: 0.75rem 2.5rem 0.75rem 0.75rem;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  color: #334155;
+  appearance: none;
+  outline: none;
+}
+
+/* Custom arrow */
+.dropdown-box::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  transform: translateY(-50%);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #64748b; /* slate-500 */
+}}
+}
+}
+</style>
