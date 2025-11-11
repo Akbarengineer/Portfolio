@@ -498,7 +498,7 @@ window.addEventListener("click", (e) => {
     </div>
 
     <!-- Service Dropdown with Custom Arrow -->
-   <div class="dropdown-wrapper">
+     <div class="dropdown-wrapper">
   <label for="service">Service</label>
   <div class="dropdown-box">
     <select id="service" name="service"
@@ -530,10 +530,10 @@ window.addEventListener("click", (e) => {
 
   </form>
 </div>
-</div>
+
   </div>
 </section>
-  <script>
+<script>
   document.querySelector("form").addEventListener("submit", function (e) {
     const service = document.getElementById("service").value;
     if (service === "default") {
@@ -542,6 +542,7 @@ window.addEventListener("click", (e) => {
     }
   });
 </script>
+
 
 <!-- Add this CSS at the end of your <style> section -->
 <style>
