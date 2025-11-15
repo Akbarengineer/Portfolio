@@ -99,11 +99,22 @@
   <div class="max-w-3xl mx-auto px-6">
 
     <!-- Headline -->
-  <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight text-center">
-    I turn ideas into stories
-    <span class="block md:inline">that become <span class="text-purple-600">content</span></span>
-    <span class="block">people <span class="text-purple-600">connect</span> with</span>
+  <style>
+  .hero-line { text-align:center; font-weight:700; line-height:1.05; }
+  .hero-line .mobile-block { display:block; }
+  @media(min-width:768px) {
+    .hero-line .mobile-block { display:inline; }
+  }
+  .accent { color:#7c3aed; }
+</style>
+
+<h1 class="hero-line">
+  I turn ideas into stories
+  <span class="mobile-block">that</span>
+  <span class="mobile-block">become <span class="accent">content</span></span>
+  <span class="mobile-block">people <span class="accent">connect</span> with</span>
 </h1>
+
 
 
 
